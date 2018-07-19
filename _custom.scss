@@ -14,6 +14,12 @@
   padding: 6px 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .ssdp-full-header {
+    display: none;
+  }
+}
+
 .ssdp-header-contacts {
 	font-size: 13px;
 	line-height: 24px;
