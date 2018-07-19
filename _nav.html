@@ -1,12 +1,27 @@
 {% if page.type_name == "Donation (v2)" %}
 
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="ssdp-full-header">
+    <div id="subheader" class="container">
+      <div class="section">
+        <div class="header_contacts ">
+          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title=""><div class="header_contact_item"><span class="icon icon-mail2"></span> ssdp@ssdp.org</div></a>
+          <div class="header_contact_item"><span class="icon icon-mobile3"></span> 202-393-5280</div>
+        </div>
+        <a target="_blank" href="https://www.youtube.com/user/SSDP" class="header_soc_icon" title="YouTube" style="opacity: 0.9;">
+          <span class="icon icon-youtube"></span></a><a target="_blank" href="https://www.instagram.com/schoolsnotprisons/" class="header_soc_icon" title="Instagram" style="opacity: 0.9;">
+        <span class="icon icon-instagram2"></span></a><a target="_blank" href="https://twitter.com/ssdp" class="header_soc_icon" title="Twitter" style="opacity: 0.9;">
+        <span class="icon icon-twitter3"></span></a><a target="_blank" href="https://www.facebook.com/ssdp/" class="header_soc_icon" title="Facebook" style="opacity: 0.9;">
+        <span class="icon icon-facebook3"></span></a>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="navbar-header">
       {% if site.has_meta_image? %}
-        <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
+      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
       {% else %}
-        <a class="navbar-brand" href="/">{{ site.long_name }}</a>
+      <a class="navbar-brand" href="/">{{ site.long_name }}</a>
       {% endif %}
     </div>
   </div>
@@ -15,6 +30,34 @@
 {% else %}
 
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="ssdp-full-header">
+    <div id="subheader" class="container">
+      <div class="section">
+
+
+        <div class="header_contacts ">
+
+
+          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title=""><div class="header_contact_item"><span class="icon icon-mail2"></span> ssdp@ssdp.org</div></a>
+
+
+
+
+          <div class="header_contact_item"><span class="icon icon-mobile3"></span> 202-393-5280</div>
+
+
+        </div>
+        <a target="_blank" href="https://www.youtube.com/user/SSDP" class="header_soc_icon" title="YouTube" style="opacity: 0.9;">
+
+          <span class="icon icon-youtube"></span></a><a target="_blank" href="https://www.instagram.com/schoolsnotprisons/" class="header_soc_icon" title="Instagram" style="opacity: 0.9;">
+
+        <span class="icon icon-instagram2"></span></a><a target="_blank" href="https://twitter.com/ssdp" class="header_soc_icon" title="Twitter" style="opacity: 0.9;">
+
+        <span class="icon icon-twitter3"></span></a><a target="_blank" href="https://www.facebook.com/ssdp/" class="header_soc_icon" title="Facebook" style="opacity: 0.9;">
+
+        <span class="icon icon-facebook3"></span></a>				</div>
+    </div>
+  </div>
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
@@ -24,9 +67,9 @@
         <span class="icon-bar"></span>
       </button>
       {% if site.has_meta_image? %}
-        <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
+      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
       {% else %}
-        <a class="navbar-brand" href="/">{{ site.long_name }}</a>
+      <a class="navbar-brand" href="/">{{ site.long_name }}</a>
       {% endif %}
     </div>
     <div id="menu-collapse" class="collapse navbar-collapse">
@@ -41,10 +84,10 @@
           <a href="{{ child.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ child.name }} <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             {% if site.show_parent_in_nav_dropdown? %}
-              <li><a href="{{ child.url }}">{{ child.name }}</a></li>
+            <li><a href="{{ child.url }}">{{ child.name }}</a></li>
             {% endif %}
             {% for child2 in child.nav_children %}
-              <li><a href="{{ child2.url }}">{{ child2.name }}</a></li>
+            <li><a href="{{ child2.url }}">{{ child2.name }}</a></li>
             {% endfor %}
           </ul>
         </li>
