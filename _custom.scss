@@ -42,13 +42,17 @@
 }
 
 .nav {
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .navbar-brand {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .navbar-nav {
   float: right;
+}
+
+.navbar-nav > li > a {
+  text-transform: uppercase;
 }
