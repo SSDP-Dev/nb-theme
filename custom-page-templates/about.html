@@ -1,17 +1,23 @@
 {% include "breadcrumbs" %}
 
-{% if page.headline.size > 0 %}
-<h2 class="headline">{{ page.headline }}</h2>
-{% endif %}
-
-
 <div id="content">
 
-  <div id="intro" class="intro">
-    <div class="text-content">
-      {{ page.basic.content }}
+  <!-- Single column row blue -->
+  <div class ="row bg-primary" style="height:35px"></div>
+  <!-- Single column row hero image -->
+  <div class = "row">
+    <div class = "col-12">
     </div>
   </div>
+  <!-- Single column take action/donate now text -->
+  <!-- Three column: find chapter, updates, students -->
+  <!-- One column: chapters map -->
+  <!-- One column: change your campus. change your world -->
+  <!-- Two columns: global dpr, harm reduction -->
+  <!-- Two columns: campus change, jsk -->
+  <!-- Latest from the blog -->
+  <!-- Student testimonial slider -->
+  <!-- Take action -->
 
   {% if page.tags_count > 0 %}
   <div class="page-tags">
@@ -19,17 +25,5 @@
   </div>
   {% endif %}
 
-  {% if page.is_homepage? == true and site.page_tags contains "homepage" %}
-    {% tag "homepage" with "homepage_widget" %}
-  {% endif %}
-
-  <div class="like-page">
-    <strong>Do you like this page?</strong>
-    {% include "like_page" %}
-  </div>
-
-  {% if page.show_stream? %}
-  {% include "page_stream" %}
-  {% endif %}
 
 </div>
