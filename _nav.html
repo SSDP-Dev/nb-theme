@@ -5,7 +5,9 @@
     <div id="subheader" class="container">
       <div class="section">
         <div class="ssdp-header-contacts ">
-          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title=""><div class="ssdp-header-contact-item"><i class="fas fa-envelope"></i>ssdp@ssdp.org</div></a>
+          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title="">
+            <div class="ssdp-header-contact-item"><i class="fas fa-envelope"></i>ssdp@ssdp.org</div>
+          </a>
           <div class="ssdp-header-contact-item"><i class="fas fa-mobile-alt"></i> 202-393-5280</div>
         </div>
         <a target="_blank" href="https://www.youtube.com/user/SSDP" class="ssdp-header-soc-icon" title="YouTube" style="opacity: 0.9;">
@@ -19,10 +21,8 @@
   <div class="container">
     <div class="navbar-header">
       {% if site.has_meta_image? %}
-      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
-      {% else %}
-      <a class="navbar-brand" href="/">{{ site.long_name }}</a>
-      {% endif %}
+      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a> {% else %}
+      <a class="navbar-brand" href="/">{{ site.long_name }}</a> {% endif %}
     </div>
   </div>
 </nav>
@@ -34,12 +34,14 @@
     <div id="subheader" class="container">
       <div class="section">
         <div class="ssdp-header-contacts ">
-          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title=""><div class="ssdp-header-contact-item"><i class="fas fa-envelope"></i>ssdp@ssdp.org</div></a>
+          <a class="" href="mailto:ssdp@ssdp.org" target="" data-toggle="tooltip" data-placement="" title="">
+            <div class="ssdp-header-contact-item"><i class="fas fa-envelope"></i>ssdp@ssdp.org</div>
+          </a>
           <div class="ssdp-header-contact-item"><i class="fas fa-mobile-alt"></i> 202-393-5280</div>
         </div>
         <a target="_blank" href="https://www.youtube.com/user/SSDP" class="ssdp-header-soc-icon" title="YouTube" style="opacity: 0.9;">
           <i class="fab fa-youtube"></i></a>
-          <a target="_blank" href="https://www.instagram.com/schoolsnotprisons/" class="ssdp-header-soc-icon" title="Instagram" style="opacity: 0.9;">
+        <a target="_blank" href="https://www.instagram.com/schoolsnotprisons/" class="ssdp-header-soc-icon" title="Instagram" style="opacity: 0.9;">
         <i class="fab fa-instagram"></i></a>
         <a target="_blank" href="https://twitter.com/ssdp" class="ssdp-header-soc-icon" title="Twitter" style="opacity: 0.9;">
         <i class="fab fa-twitter"></i></a>
@@ -55,18 +57,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      {% if site.has_meta_image? %}
-      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a>
-      {% else %}
-      <a class="navbar-brand" href="/">{{ site.long_name }}</a>
-      {% endif %}
+      </button> {% if site.has_meta_image? %}
+      <a class="navbar-brand" href="/"><img alt="{{ site.long_name }}" src="{{ site.meta_image_url }}"></a> {% else %}
+      <a class="navbar-brand" href="/">{{ site.long_name }}</a> {% endif %}
     </div>
     <div id="menu-collapse" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        {% for child in site.root_nav_pages %}
-        {% if child.leaf? or child.nav_children.size == 0 %}
-        <li {% if child.is_or_is_ancestor_of_current_page? %}class="active"{% endif %}>
+        {% for child in site.root_nav_pages %} {% if child.leaf? or child.nav_children.size == 0 %}
+        <li {% if child.is_or_is_ancestor_of_current_page? %}class="active" {% endif %}>
           <a href="{{ child.url }}">{{ child.name }}</a>
         </li>
         {% else %}
@@ -75,14 +73,12 @@
           <ul class="dropdown-menu" role="menu">
             {% if site.show_parent_in_nav_dropdown? %}
             <li><a href="{{ child.url }}">{{ child.name }}</a></li>
-            {% endif %}
-            {% for child2 in child.nav_children %}
+            {% endif %} {% for child2 in child.nav_children %}
             <li><a href="{{ child2.url }}">{{ child2.name }}</a></li>
             {% endfor %}
           </ul>
         </li>
-        {% endif %}
-        {% endfor %}
+        {% endif %} {% endfor %}
       </ul>
     </div>
   </div>
