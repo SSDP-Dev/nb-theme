@@ -81,3 +81,10 @@
 .text-white {
   color:#fff;
 }
+
+/** Spacing **/
+/** Since we don't have access to the spacer variable  like Bootstrap 4, all of these classes are in px **/
+
+.padding-35 {
+  padding: 35px;
+}
