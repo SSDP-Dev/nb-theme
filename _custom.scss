@@ -7,6 +7,38 @@
   text-transform: uppercase;
 }
 
+// Set HTML to Open Sans default
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// Set all headings to Montserrat
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+// Set heading colors
+
+h1 {
+  color: #136F8D;
+}
+
+h2 {
+  color: #636467;
+}
+
+h3 {
+  color: #FAA732;
+}
+
+h4 {
+  color: #136F8D;
+}
+
+h5 {
+  color: #003249;
+}
 /** Custom Nav Styles **/
 .ssdp-full-header {
   border-bottom: 1px solid #eee;
