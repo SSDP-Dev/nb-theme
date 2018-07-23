@@ -3,6 +3,24 @@
       display: grid;
       grid-template-columns: repeat(12, [col-start] 1fr);
     }
+
+  .hero-img,
+  .mission-text,
+  .mission-sidebar {
+    grid-column: 1 / -1;
+  }
+
+
+    @media all and (min-width: 700px) {
+    .mission-text {
+      grid-column: 1 / 9;
+    }
+
+      .mission-sidebar {
+        grid-column: 9 / 13;
+      }
+    }
+
   </style>
 
 <div class="grid">
