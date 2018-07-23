@@ -75,16 +75,52 @@
 
   <div class="mission-sidebar">
     <h3>Did you know?<h3>
-      <div>sliders go here</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
       <h3>Connect with us</h3>
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-youtube"></i>
-    <h3>Contact</h3>
-    <span><i class="fas fa-map-marker-alt"></i> 1011 O Street NW #1 Washington, DC 20001</span>
-    <span><i class="fas fa-mobile-alt"></i> 202-393-5280</span>
-    <span><i class="fas fa-envelope"></i> Email Us</span>
+    <div style="float: left;">
+      <a target="_blank" href="https://www.youtube.com/user/SSDP" class="ssdp-header-soc-icon" title="YouTube" style="opacity: 0.9;">
+          <i class="fab fa-youtube"></i></a><a target="_blank" href="https://www.instagram.com/schoolsnotprisons/" class="ssdp-header-soc-icon" title="Instagram" style="opacity: 0.9;">
+        <i class="fab fa-instagram"></i></a><a target="_blank" href="https://twitter.com/ssdp" class="ssdp-header-soc-icon" title="Twitter" style="opacity: 0.9;">
+        <i class="fab fa-twitter"></i></a><a target="_blank" href="https://www.facebook.com/ssdp/" class="ssdp-header-soc-icon" title="Facebook" style="opacity: 0.9;">
+        <i class="fab fa-facebook-f"></i></a>
+    </div>
+    <h3 style="clear: left;">Contact</h3>
+    <p><i class="fas fa-map-marker-alt"></i> 1011 O Street NW #1 Washington, DC 20001</p>
+    <p><i class="fas fa-mobile-alt"></i> 202-393-5280</p>
+    <p><i class="fas fa-envelope"></i> Email Us</p>
   </div>
 
 </div>
