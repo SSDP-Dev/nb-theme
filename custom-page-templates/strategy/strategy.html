@@ -2,17 +2,28 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-auto-flow: dense;
   }
 
   .title,
   .left-icon,
-  .right-text {
+  .right-text,
+  .right-icon,
+  .left-text {
     grid-column: 1 / -1;
   }
 
   @media all and (min-width: 700px) {
     .left-icon {
       grid-column: 1 / 5;
+    }
+
+    .right-icon {
+      grid-column: 9 / 13
+    }
+
+    .left-text{
+      grid-column: 1 /9;
     }
 
     .right-text {
@@ -75,5 +86,16 @@
         <li>The Historically Black Colleges and Universities (HBCU) Working Group will receive resources and support to expand SSDP’s engagement with historically Black colleges and universities and support more African American students in the SSDP network.</li>
         <li>The International Organizing Committee (IOC) will work with staff to ensure our existing chapter materials are globally applicable and curate new, region-specific advocacy materials for our international chapters, including translation of resources into Spanish and other languages.</li>
     </ul>
+  </div>
+  <div class="right-icon">
+    <img />
+    <h3>Education and Advocacy</h3>
+  </div>
+  <div class="left-text">
+    <h3>Pushing the policy envelope and speaking truth to power</h3>
+    <ul>
+      <li>We will provide training, mentorship, and resources to change campus and local policies and empower our membership with timely opportunities to take action on legislation, rule making, and calls for input, including meeting with elected officials and decision makers.</li>
+      <li>We will generate thousands of communications to government officials and decision makers.</li>
+      <li>Our staff will publish and maintain data on campus drug policies through the Campus Policy Gradebook to serve as expert resources on these issues.</li>
   </div>
 </div>
